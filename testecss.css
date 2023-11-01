@@ -1,0 +1,169 @@
+/* Define o estilo para o corpo da página */
+.body {
+    background-image: url("imagens/fundo/musicacolor.jpg"); /* Define a imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-size: cover; /* Faz com que a imagem cubra todo o espaço disponível */
+    display: flex; /* Usa um modelo flexível para o layout */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    padding: 20px; /* Adiciona espaçamento interno de 20px */
+    min-height: 100vh; /* Define a altura mínima da tela como 100% da altura da janela */
+}
+.ftfundo{
+    background-image: url("imagens/cardapio/hamburguer e batata.jpeg"); /* Define a imagem de fundo */
+}
+.ftfundo2{
+    background-image: url("imagens/index/showPublicoHorizontal.jpg"); /* Define a imagem de fundo */
+}
+
+/* Define o estilo para elementos com classe .w50 */
+.w50 {
+    width: 50%; /* Define a largura como 50% */
+    float: left; /* Faz os elementos flutuarem à esquerda */
+    padding-right: 15px; /* Adiciona espaçamento à direita de 15px */
+}
+
+/* Define o estilo para elementos com classe .box */
+.box {
+    display: flex; /* Usa um modelo flexível para o layout */
+    width: 930px; /* Define uma largura fixa de 930px */
+}
+
+/* Define o estilo para elementos com classe .img-box */
+.img-box {
+    background-color: rgba(111, 111, 255, 0.35); /* Define a cor de fundo com transparência */
+    width: 50%; /* Define a largura como 50% */
+    display: flex; /* Usa um modelo flexível para o layout */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    padding: 20px; /* Adiciona espaçamento interno de 20px */
+    border-radius: 20px 0 0 20px; /* Define bordas arredondadas no canto superior esquerdo */
+}
+
+/* Define o estilo para imagens dentro de elementos com classe .img-box */
+.img-box img {
+    width: 100%; /* Define a largura da imagem como 100% */
+}
+
+/* Define o estilo para elementos com classe .form-box */
+.form-box {
+    background-color: rgba(200, 200, 200, 0.25); /* Define a cor de fundo com transparência */
+    backdrop-filter: blur(40px); /* Aplica um efeito de desfoque ao fundo */
+    padding: 30px 40px; /* Adiciona espaçamento interno */
+    width: 50%; /* Define a largura como 50% */
+    border-radius: 0 20px 20px 0; /* Define bordas arredondadas no canto superior direito */
+}
+
+/* Define o estilo para o título h2 dentro de elementos com classe .form-box */
+.form-box h2 {
+    font-size: 30px; /* Define o tamanho da fonte como 30px */
+}
+
+/* Define o estilo para parágrafos dentro de elementos com classe .form-box */
+.form-box p {
+    font-weight: bold; /* Define a fonte como negrito */
+    color: white; /* Define a cor do texto */
+}
+
+/* Define o estilo para links dentro de parágrafos dentro de elementos com classe .form-box */
+.form-box p a {
+    color: #ff3838; /* Define a cor do link */
+    text-decoration: none; /* Remove a decoração do link */
+}
+
+/* Define o estilo para formulários dentro de elementos com classe .form-box */
+.form-box form {
+    margin: 20px 0; /* Adiciona margem superior e inferior de 20px */
+}
+
+/* Define o estilo para grupos de entrada de formulário dentro de elementos com classe .input-group */
+form .input-group {
+    margin-bottom: 15px; /* Adiciona margem inferior de 15px */
+}
+
+/* Define o estilo para rótulos de entrada de formulário dentro de grupos de entrada de formulário */
+form .input-group label {
+    color: lightskyblue; /* Define a cor do rótulo */
+    font-weight: bold; /* Define a fonte como negrito */
+    display: block; /* Faz com que o rótulo seja exibido como bloco */
+    margin-bottom: 5px; /* Adiciona margem inferior de 5px */
+}
+
+/* Define o estilo para campos de entrada de formulário dentro de grupos de entrada de formulário */
+form .input-group input {
+    width: 100%; /* Define a largura como 100% */
+    height: 15px; /* Define a altura como 15px */
+    background-color: rgba(255, 255, 255, 0.32); /* Define a cor de fundo com transparência */
+    border-radius: 20px; /* Define bordas arredondadas */
+    outline: none; /* Remove o contorno padrão do campo de entrada */
+    border: 2px solid transparent; /* Define uma borda transparente */
+    padding: 15px; /* Adiciona espaçamento interno de 15px */
+    font-size: 15px; /* Define o tamanho da fonte como 15px */
+    color: #252323; /* Define a cor do texto */
+    transition: all 0.4s ease; /* Adiciona uma transição suave de 0.4 segundos */
+}
+
+
+/* Define o estilo para campos de entrada de formulário quando estão em foco */
+form .input-group input:focus {
+    border-color: blueviolet; /* Define a cor da borda quando o campo está em foco */
+}
+
+/* Define o estilo para botões dentro de grupos de entrada de formulário */
+form .input-group button {
+    width: 100%; /* Define a largura como 100% */
+    height: 40px; /* Define a altura como 40px */
+    background: #ff3838; /* Define a cor de fundo */
+    border-radius: 20px; /* Define bordas arredondadas */
+    outline: none; /* Remove o contorno padrão do botão */
+    border: none; /* Remove a borda do botão */
+    margin-top: 15px; /* Adiciona margem superior de 15px */
+    color: white; /* Define a cor do texto como branco */
+    cursor: pointer; /* Define o cursor como um ponteiro */
+    font-size: 16px; /* Define o tamanho da fonte como 16px */
+}
+
+/* Define regras de estilo para telas com largura máxima de 930px */
+@media (max-width: 930px) {
+    .img-box {
+        display: none; /* Oculta elementos com classe .img-box */
+    }
+    .box {
+        width: 700px; /* Reduz a largura da classe .box para 700px */
+    }
+    .form-box {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .w50{
+        width: 100%;
+        padding: 0;
+    }
+}
+/* Estilo para o elemento select */
+#estados {
+    width: 100%; /* Define a largura como 100% */
+    height: 40px; /* Define a altura como 40px */
+    background-color: rgba(255, 255, 255, 0.32); /* Define a cor de fundo com transparência */
+    border-radius: 20px; /* Define bordas arredondadas */
+    outline: none; /* Remove o contorno padrão */
+    border: 2px solid transparent; /* Define uma borda transparente */
+    padding: 10px; /* Adiciona espaçamento interno */
+    font-size: 15px; /* Define o tamanho da fonte como 15px */
+    color: #252323; /* Define a cor do texto */
+    transition: all 0.4s ease; /* Adiciona uma transição suave de 0.4 segundos */
+}
+
+/* Estilo para as opções do select */
+#estados option {
+    background-color: rgba(255, 255, 255, 0.8); /* Define a cor de fundo das opções */
+    color: #252323; /* Define a cor do texto das opções */
+    font-size: 15px; /* Define o tamanho da fonte das opções */
+}
+
+/* Estilo para o select quando estiver em foco */
+#estados:focus {
+    border-color: blueviolet; /* Define a cor da borda quando o select está em foco */
+}

@@ -1,0 +1,116 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<link rel="shortcut icon" href="imagens/imagens2/logo.jpg">
+	<title> MC lanche </title>
+	<meta charset="UTF-8">
+	
+</head>
+<body bgcolor="#ffa000">
+	<a name="inicio"></a>
+
+	<table border="0"  align="center">
+
+		<colgroup>
+			<col span="4" style="background-color:red">
+			<col style="background-color:yellow">
+		</colgroup>
+		<tr>
+			<th>MC do Lanche</th>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<font size="5" color="white">Monte o seu Hamburgue</font>
+			</td>
+			<td>
+				<a href="https://api.whatsapp.com/send/?phone=5562986255461&text&type=phone_number&app_absent=0" target="_blank">
+					<font>Contato</font>
+				</a>
+			</td>
+			<td>
+				<a href="https://api.whatsapp.com/send/?phone=5562986255461&text&type=phone_number&app_absent=0" target="_blank">
+					<img src="imagens/logos/whats.png"  height="50">
+				</a>
+			</td>
+			<td>
+				<a href="pagina.html" target="_self" rel="noopener noreferrer">
+					<font face="impact" size="" color="red" align="center">
+						<center>Voltar</center>
+					</font>
+				</a>
+			</td>
+		</tr>
+</table>
+
+
+	<h4>escolha o pao</h4>
+	<form>
+	<label for="estado">pão:</label>
+	<select id="estado" name="pão">
+        	<option value=" ">escolha o pâo</option>
+        	<option value="p1">italiano branco</option>
+        	<option value="p2">parmesão</option>
+        	<option value="P3">pão três queijos</option>
+			<option value="p4">9 grãos </option>
+	</select>
+
+	<h4>escolha a carne</h4>
+
+	<div class="radio">
+		<b>escolha a carne</b>
+		<br />
+		<input id="1" type="radio" name="option" value="1" />
+		<label for="1">bolvina</label>
+		<br />
+		<input id="2" type="radio" name="option" value="2" />
+		<label for="2">suina</label>
+		<br />
+		<input id="3" type="radio" name="option" value="3" />
+		<label for="3">frango</label>
+	</div>
+
+	<h4>escolha os ingredientes</h4>
+
+	
+		<input type="checkbox" name="tomate"    value="tomate">tomate<br>
+		<input type="checkbox" name="alface"    value="alface">alface<br>
+		<input type="checkbox" name="pipino"    value="pipino">pipino<br>
+		<input type="checkbox" name="batata"    value="batata">batata palha<br>
+		<input type="checkbox" name="salsicha"  value="salsicha">salsicha<br>
+		<input type="checkbox" name="bacon"     value="bacon">bacon<br>
+		<input type="checkbox" name="azeitona"  value="azeitona">azeitona<br>
+		<input type="checkbox" name="presunto"  value="presunto">presunto<br>
+		<input type="checkbox" name="queijo"    value="queijo">queijo<br>
+		<input type="checkbox" name="mussarela" value="mussarela">mussarela<br>
+	
+	<br>
+
+	
+		escolha a cor da embalagem: <input type="color" name="favcor" value="#	0000FF">
+	
+	<br>
+	<br>
+	<hr/>
+	<font color="white" size="5" > agende seu pedido para ser entregue mais tarde 	</font>
+	<br>
+	<br>
+		Data de nascimento: <input type="datetime-local" name="bdaytime">
+
+	<hr/>
+
+
+
+
+	<br>
+	<label for="story">orientação do pedido:</label>
+	<br>
+	<textarea id="story" name="story" rows="5" cols="33">
+orientação do pedido:
+	</textarea>
+	<br><br>
+		<input type="submit" name="enviar" value="Enviar pedido">
+		<input type="reset" value="excluir pedido" />
+ 
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagens/angular/logo.png">
+    <link rel="stylesheet" href="estilo das pagina.css">
+    <title>calculadora de combustivel</title>
+    <script defer src="teste.js"></script>
+    <script src="calculadorCombustivel.js "></script>
+
+</head>
+<body class="body_escuro">
+<header class="header_red">
+    <nav class="nav">
+        <a href="angular.html" class="logo"><h2>G ou E</h2></a>
+        <button class="hamburger" > </button>
+        <ul class="nav-list nav-list_red">
+            <li><a href="index.html" class="exemplo1">projeto em Angular</a> </li>
+            <li><a href="index.html" class="exemplo1">projeto da sala</a></li>
+            <li ><a href="index.html" class="exemplo1">atividades</a></li>
+        </ul>
+    </nav>
+</header>
+
+<a name="inicio"></a>
+<br>
+    <h1 class="h1_white text_center">Calcular combustivel</h1>
+<br><br>
+<main class="medidasFundo body_claro displeyFlexColuna">
+    <img src="imagens/imagens2/normal.jpg" id="imagem" width="70%">
+    <br>
+    <form name="frdados">
+        <input type="text" name="txetanol" size="10" placeholder="Etanol" autofocus>
+        <input type="text" name="txgasolina" size="10" placeholder="Gasolina">
+        <input type="button"value="Calcular" onclick="melhor()">
+        <input type="reset" value="limpar" onclick="limpar()">
+    </form>
+</main>
+
+</body>
+</html>

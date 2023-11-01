@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<link rel="shortcut icon" href="imagens/logos/logo.jpg">
+	<title> Cadastro music Z </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="estilo das pagina.css">
+	<script defer src="teste.js"></script>
+</head>
+<body>
+<header class="header_orange">
+	<nav class="nav">
+		<a href="index%20da%20pagina.html" class="logo">Music Z</a>
+		<button class="hamburger" > </button>
+		<ul class="nav-list nav-list_orange">
+			<li><a href="responsivoFormularioDeLogin.html">login</a> </li>
+			<li><a href="responsivoFormularioDeCadastro.html">cadastro</a></li>
+			<li><a href="formulario de cadastro de musicos.html">cadastro musico</a></li>
+			<li><a href="https://api.whatsapp.com/send/?phone=5562986255461&text&type=phone_number&app_absent=0" >contato</a></li>
+			<li>
+			<form action="#" onsubmit="return false">
+				<select id="atividades" name="atividades" class="meu-select">
+					<option value="AC">uity
+					</option>
+					<option value="AL">Alagoas</option>
+					<option value="AP">Amapá</option>
+					<option value="AM">Amazonas</option>
+					<option value="BA">Bahia</option>
+					<option value="CE">Ceará</option>
+					<option value="DF">Distrito Federal</option>
+					<option value="ES">Espírito Santo</option>
+					<option value="GO">Goiás</option>
+					<option value="MA">Maranhão</option>
+					<option value="MT">Mato Grosso</option>
+					<option value="MS">Mato Grosso do Sul</option>
+					<option value="MG">Minas Gerais</option>
+					<option value="PA">Pará</option>
+					<option value="PB">Paraíba</option>
+					<option value="PR">Paraná</option>
+					<option value="PE">Pernambuco</option>
+					<option value="PI">Piauí</option>
+					<option value="RJ">Rio de Janeiro</option>
+					<option value="RN">Rio Grande do Norte</option>
+					<option value="RS">Rio Grande do Sul</option>
+					<option value="RO">Rondônia</option>
+					<option value="RR">Roraima</option>
+					<option value="SC">Santa Catarina</option>
+					<option value="SP">São Paulo</option>
+					<option value="SE">Sergipe</option>
+					<option value="TO">Tocantins</option>
+				</select>
+			</form>
+			</li>
+		</ul>
+	</nav>
+</header>
+	<center><h1>Cadastro</h1>
+	<br>
+	<font size="6" > Dados pessoais </font>
+	<br><br>
+	<form method="get" action="envio_dados.php">
+		<input type="text" name="nome" placeholder="digite seu Nome aqui">
+		<input type="e-mail" name="email" placeholder="Digite seu e-mail">
+		<input type="submit" name="enviar" value="Enviar">    
+	</form>
+	<br>
+	<form>
+		Data de nascimento: <input type="date" name="nascimento">
+	</form>
+	<br>
+	<form>
+		<input type="button" value="Clique Aqui" onclick="msg()">
+	</form>
+	<h4> enviar RG frente e verso </h4>
+	<form>
+		<input type="file" name="arquivos" multiple>
+	</form>
+	<br>
+		<form action="#" onsubmit="return false">
+			CEP: <input type="text" id="cep" maxlength="9" placeholder="13483-000" autofocus>
+    <label for="estados">Estado:</label>
+	<select id="estados" name="estados">
+        	<option value="AC">Acre</option>
+        	<option value="AL">Alagoas</option>
+        	<option value="AP">Amapá</option>
+        	<option value="AM">Amazonas</option>
+        	<option value="BA">Bahia</option>
+        	<option value="CE">Ceará</option>
+        	<option value="DF">Distrito Federal</option>
+        	<option value="ES">Espírito Santo</option>
+        	<option value="GO">Goiás</option>
+        	<option value="MA">Maranhão</option>
+        	<option value="MT">Mato Grosso</option>
+        	<option value="MS">Mato Grosso do Sul</option>
+        	<option value="MG">Minas Gerais</option>
+        	<option value="PA">Pará</option>
+        	<option value="PB">Paraíba</option>
+        	<option value="PR">Paraná</option>
+        	<option value="PE">Pernambuco</option>
+        	<option value="PI">Piauí</option>
+        	<option value="RJ">Rio de Janeiro</option>
+        	<option value="RN">Rio Grande do Norte</option>
+        	<option value="RS">Rio Grande do Sul</option>
+        	<option value="RO">Rondônia</option>
+        	<option value="RR">Roraima</option>
+        	<option value="SC">Santa Catarina</option>
+        	<option value="SP">São Paulo</option>
+        	<option value="SE">Sergipe</option>
+        	<option value="TO">Tocantins</option>
+	</select>
+			Cidade: <input type="text" id="cidade"><br><br>
+			Bairro: <input type="text" id="bairro">
+			Endereço: <input type="text" id="endereco">
+		</form>
+	<h4> enviar comprovante de endereço </h4>
+	<form>
+		<input type="file" name="arquivos">
+	</form>
+<br><br><br>
+
+<script>
+function msg() {
+  alert("preencha todo o formulario!");
+}
+</script>
+
+<div class="radio">
+	<b>sexo</b>
+	<br />
+	<input id="1" type="radio" name="option" value="1" />
+	<label for="1">masculino</label>
+	<br />
+	<input id="2" type="radio" name="option" value="2" />
+	<label for="2">feminino</label>
+	<br />
+</div>
+<a href="formulario.html">
+	<form>
+		<input type="submit" value="Salvar">
+	</form>
+</a>
+		<form>
+		<a href="pagina.html" target="_self" rel="noopener noreferrer">
+			<input type="submit" value="proximo">
+		</a>
+		</form>
+</body>
+</html>

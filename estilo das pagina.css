@@ -1,0 +1,436 @@
+
+/* Define um estilo base para todos os elementos, removendo margens e preenchimentos padrão */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.teste {
+    height: 150px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Alinhar imagem e legenda verticalmente */
+    align-items: center;
+    text-align: center; /* Alinhar o texto no centro da div */
+    overflow: hidden; /* Para garantir que a imagem não saia da caixa */
+}
+
+.teste img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Para ajustar a imagem ao tamanho da caixa mantendo a proporção */
+}
+
+.legenda {
+    margin-top: 5px; /* Espaçamento entre a imagem e a legenda */
+    font-size: 14px;
+    color: #333; /* Cor da legenda */
+}
+.teste:hover {
+    transform: scale(1.3);
+    transition: transform 0.6s;
+    background-color: #aee3f6;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ff0101;
+}
+.teste_tm_p{
+    transform: scale(1);
+}
+
+.teste_body {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.exemplo1:hover {
+    color: red;
+}
+.exemplo1black:hover {
+    color: #000000;
+}
+.exemplo1cinza:hover {
+    color: #7a7a7a;
+}
+
+.exemplo2:hover {
+    font-size: 150%;
+}
+
+.exemplo3:hover {
+    background: #f6ce07;
+}
+
+.exemplo4:hover {
+    font-family: monospace;
+}
+.mostrar{
+    display: none;
+}
+
+.passar_mouse:hover .mostrar{
+    display:block;
+}
+
+/* Estilos para o fundo do corpo com diferentes classes */
+.body_escuro {
+    background-color: #544c4c;
+    padding: -1px;
+}
+
+
+.body_claro {
+    background-color: whitesmoke;
+    padding: 0px;
+}
+
+.body_preto {
+    background-color: black;
+    padding: 0px;
+}
+
+.body_laranja {
+    background-color: #fc961f;
+    padding: 0px;
+}
+.medidasFundo {
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+
+    min-width: 250px;
+    max-width:80%;
+    margin: auto;
+}
+.medidasFundo2 {
+    padding: 40px;
+    border-radius: 20px;
+
+    min-width: 250px;
+    max-width:80%;
+    margin: auto;
+}
+
+/* Estilos para a seção principal */
+.main_mz {
+    border-radius: 5px;
+    background-image: url("imagens/fundo/musica.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main_mc{
+    border-radius: 5px;
+    background-image: url("imagens/cardapio/hamburguer e batata.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilos para um elemento com o ID "im" */
+#im {
+    background-image: url("imagens/fundo/musica.avif");
+    background-size: cover;
+}
+
+/* Define a classe "text_center" para centralizar o texto */
+.text_center {
+    text-align: center;
+}
+
+/* Estilos para títulos com diferentes cores */
+.h1_black {
+    color: black;
+}
+
+.h1_white {
+    color: white;
+}
+
+.h1_red {
+    color: red;
+}
+.displeyFlexColuna {
+    display: flex;
+    flex-direction: column;
+}
+/* Estilos para bordas de letras com diferentes cores */
+.borda_letra {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #00c4ff;
+}
+
+.borda_letra_white {
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #ffffff;
+}
+
+.borda_letra_black {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+}
+
+.borda_letra_yellow {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f6ce07;
+}.mcl{
+     min-width: 70px;
+     max-width: 70px;
+ }
+.mcm{
+    min-width: 60px;
+    max-width: 60px;
+}
+.mcc{
+    min-width: 90px;
+    max-width: 90px;
+}
+
+/* Estilos para elementos "i" */
+i {
+    padding: 0 20px 20px 20px;
+    background-color: aliceblue;
+}
+
+/* Estilos para elementos com o ID "palavras" */
+#palavras {
+    text-align: left;
+    color: #36312c;
+    font-size: 34px;
+    font-family: Verdana, serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ff3838;
+    text-decoration: none;
+}
+
+/* Estilos para elementos "figure" */
+figure {
+    float: right;
+    max-width: 280px;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+    color: #f6ce07;
+}
+
+/* Estilos para links */
+a {
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+/* Estilos para o cabeçalho com diferentes cores */
+.header {
+    background-color: #0004ff;
+    padding-inline: 16px;
+}
+
+.header_orange {
+    background-color: #ff5900;
+    padding-inline: 16px;
+}
+.header_red {
+    background-color: #cd1313;
+    padding-inline: 16px;
+}
+
+.header_black {
+    background-color: #000000;
+    padding-inline: 16px;
+}
+
+.header_cinza {
+    background-color: #36312c;
+    padding-inline: 16px;
+}
+.header_cinzaClaro {
+    background-color: #7a7a7a;
+    padding-inline: 16px;
+}
+.header_roxo {
+    background-color: #671ee5;
+    padding-inline: 16px;
+}
+
+/* Estilos para a barra de navegação */
+.nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inside: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para o logotipo */
+.logo {
+    font-size: 48px;
+    color: white;
+}
+
+/* Estilos para a lista de navegação */
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+/* Estilos para os itens da lista de navegação */
+.nav-list a {
+    font-size: 18px;
+    color: aliceblue;
+    padding-block: 16px;
+}
+
+/* Estilos para o ícone do menu hamburguer */
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+
+/* Estilos para as linhas do ícone do menu hamburguer */
+.hamburger::before,
+.hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Estilos para a barra de navegação em telas pequenas */
+@media (max-width: 750px) {
+    .hamburger {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        clip-path: circle(100px at 90% -15%);
+
+        background: blue;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .nav-list_orange {
+        background: #ff5900;
+    }
+    .nav-list_red {
+        background: #cd1313;
+    }
+    .nav-list_black {
+        background: #0c0711;
+    }
+    .nav-list_cinza {
+        background: #36312c;
+    }
+    .nav-list_cinzaclaro {
+        background: #7a7a7a;
+    }
+    .nav-list_roxo {
+        background: #671ee5;
+    }
+
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    /* Movimenta o primeiro traço */
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    /* Movimenta o segundo traço */
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    /* Movimenta o terceiro traço */
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    /* Movimenta o quarto traço */
+    .nav-list li:nth-child(4) a {
+        transition: 0.5s 0.6s;
+    }
+
+    /* Movimenta o quinto traço */
+    .nav-list li:nth-child(5) a {
+        transition: 0.5s 0.8s;
+    }
+
+    .nav.active .nav-list a {
+        opacity: 1;
+    }
+
+    .nav.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-image: url("imagens/fundo/mu.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+/* Estilos para todos os elementos select */
+select {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff; /* Cor de fundo desejada */
+    color: #000; /* Cor do texto desejada */
+    font-size: 16px; /* Tamanho da fonte desejado */
+    /* Outros estilos desejados */
+}
+
+/* Estilos específicos para um select com a classe "meu-select" */
+.meu-select {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ff8100; /* Cor de fundo desejada */
+    color: #ffffff; /* Cor do texto desejada */
+    font-size: 16px; /* Tamanho da fonte desejado */
+    /* Outros estilos desejados */
+}
+
