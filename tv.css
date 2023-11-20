@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+body {
+
+
+}
+section{
+
+}
+
+
+.tv {
+    background-color: black;
+    border: 10px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 854px;
+    height: 480px;
+}
+
+.screen {
+    background: black;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.remote-control {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.remote-control button {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
